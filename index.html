@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Swachha Eco Solutions</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <script>
+    $(document).ready(function(){
+     
+        $(".menuToggler").click(function(){
+            if($(".wrap").hasClass("slideOpen")) {
+              $(".wrap").removeClass("slideOpen");
+          } else {
+              $(".wrap").addClass("slideOpen");
+          }
+        });
+      });</script>
+    
+</head>
+
+<body style="padding: 0;margin: 0;">
+    
+   
+    <nav id="menu" class="panel" style=" position: absolute; display: flex;flex-direction: column;"role="navigation">
+        <ul class="menuList">
+            <a href="#" ><li class="active">Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="#"><li>XYZ</li></a>
+        </ul>
+        
+            <div class="social-icons links">
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+                <a href="#"><i class="icon ion-social-youtube"></i></a>
+            </div>
+        
+    </nav>
+    <div class="wrap">
+        <div class="menuToggler">
+            <img src="assets/images/menu.png" height="30px">
+        </div>
+        <div class="logo">
+           <img class="logoImg" src="assets/images/swacha.png">
+       </div>
+       <div >
+        <div class="container linkContainer">
+            <div class="row" style="margin: 0;">
+                
+                <div class="col-md-6 p-0 m-0 videoContainer vid1" >
+                    <a href="index.html" style=" height: 100%" >
+                  
+                        <h2 class="zeroWaste">Zero Waste Management</h2>
+                 
+                    </a>
+                </div>
+                <div class="col-md-6 p-0 m-0 videoContainer vid2">
+                    <a href="index.html" style=" height: 100%" >
+                        <div>
+                  
+                        <h2 class="industrialWaste">Industrial Waste Management</h2></div>
+                 
+                    </a>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="container mainContainer">
+            <div class="row" style="margin: 0;">
+                <div class="col-md-6 p-0 m-0 videoContainer" >
+                    <video class="vidCover" autoplay loop muted height="100%">
+                        <source src="assets/videos/vid1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-md-6 p-0 m-0 videoContainer">
+                    <video autoplay class="vidCover" loop muted height="100%">
+                        <source src="assets/videos/vid1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+       </div>
+       
+
+   </div>
+    
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   
+</body>
+
+</html>
