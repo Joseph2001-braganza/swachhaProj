@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap');
 
 .oswald{
-   font-family: 'Oswald', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 h4{
@@ -29,7 +29,7 @@ p{
 }
 .card:hover .card-img,
 .card:focus .card-img {
-  transform: scale(2.02);
+  transform: scale(1.2);
   opacity:0.5;
   
 }
