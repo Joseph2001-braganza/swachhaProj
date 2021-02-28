@@ -103,14 +103,14 @@ color: #2f6d3b;
 
 .ourclients{
     background-color: rgb(237, 237, 237);
+    margin-bottom: 0;
 }
 
 .clientCard{
-    padding: 10px;
     width: 100%;
     height: 220px;
     position: relative;
-    padding: 30px;
+    padding: 50px;
     color: #fff;
     background-color: #fff;
     box-shadow: .5px .5px 5px rgba(0, 0, 0, 0.2);
@@ -126,6 +126,130 @@ color: #2f6d3b;
 .ourclients .clientCard:hover{
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
 }
+
+
+.testimonials{
+    background-color: rgb(237, 237, 237);
+    margin: 0;
+}
+
+.testimonials-card{
+    background-color: #fff;
+    width: 100%;
+    padding: 40px 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-layer{
+    position: absolute;
+    top: calc(100% - 5px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2f6d3b;
+    z-index: 1;
+    transition: 0.25s;
+}
+
+.testimonials-content{
+    position: relative;
+    z-index: 3;
+}
+
+
+.testimonials-card:hover .testimonials-layer{
+    top: 0;
+}
+
+.testimonials-card:hover .testimonials-content p,
+.testimonials-card:hover .testimonials-content .quotes-close,
+.testimonials-card:hover .testimonials-content .quotes-open,
+.testimonials-card:hover .testimonials-content h2,
+.testimonials-card:hover .testimonials-content h2 span{
+    color: #fff;
+}
+
+.testimonials-card:hover .testimonials-img{
+    border: 3px #fff solid;
+}
+
+.btn-green{
+    color: #387a45;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    min-height: 350px;
+    margin: 0px 20px;
+  }
+
+  .testimonials-content p{
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 0;
+
+  }
+  .quotes-open{
+      width: 100%;
+      text-align: left;
+      font-size: 50px;
+      font-family: serif;
+      height: 20px;
+  }
+  .quotes-close{
+    width: 100%;
+    text-align: right;
+    font-size: 50px;
+    line-height: 20px;
+    font-family: serif;
+    height: 20px;
+    margin-bottom: 20px;    
+}
+  .testimonials-content p span{
+    font-size: 50px;
+    line-height: 60px;
+
+}
+  .testimonials-content h2{
+    font-size: 20px;
+    font-weight: 800;
+    color: #387a45;
+
+}
+.testimonials-content h2 span{
+    font-size: 14px;
+    font-weight: 800;
+    color: #47a95b;
+
+}
+
+  .testimonials-img{
+      height: 100px;
+      width: 100px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px #387a45 solid;
+  }
+
+  .testimonials-img img{
+    height: 100px;
+    width: 100px;
+    
+}
+
+
 
 @media screen and (max-width:768px) {
     .single-blog:hover img {
