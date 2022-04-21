@@ -734,6 +734,22 @@
 
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      grabCursor: true,
+      centeredSlides: true,
+      autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+      slidesPerView: 'auto',
+      loop:true,
+      navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+    });
+  </script>
   <script type="text/javascript">
 
     function scrollPos() {
