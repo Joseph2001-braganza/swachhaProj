@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="assets/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+    integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
+  <link rel="stylesheet" type="text/css" href="news.css">
+  <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+  <title>Zero Waste Management</title>
+
+</head>
+
+<body>
+  <div class="pageContainer">
+    <div class="navbar">
+      <div class="menu">
+        <a class="navbar-brand" href="#"><img src="assets/images/swacha.png" height="70px"></a>
+        <div class="ham-menu " style="color:#47a95b;">
+          <div class="fas fa-align-justify " style="cursor: pointer; "></div>
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="main" onscroll="scrollPos();">
+        <header>
+          <div class="overlay">
+            <div class="content">
+            </div>
+            <section class="gallery-carousel" style="margin-top: 100px;">
+              <div class="container">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner" style="height: 80vh;">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100"
+                        src="http://swachhaecosolutions.com/images/gallery/events/swatchevent_1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item" style="height: 10vh;">
+                      <img class="d-block w-10"
+                        src="assets/images/greenevent_3.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item" style="height: 80vh;">
+                      <img class="d-block w-3000"
+                        src="assets/images/greenevent_1.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+            
+            <!-- removed the video section from here starts from here -->
+
+
+            <section class="stats m-5 mt-2">
+              <div class="container">
+                <div class="row">
+                  <div class="area-heading">
+                    <h3>Statistics</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 col-lg-3 col-xl-3 mb-2">
+                    <div class="statCard" id="counter">
+                      <h3 class="statValue counter-value" data-count="65000">0</h3>
+                      <p>KG - Waste diverted from landfills every day</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3 col-xl-3 mb-2">
+                    <div class="statCard">
+                      <h3 class="statValue counter-value" data-count="37400">0</h3>
+                      <p>MT CO2e - Greenhouse gas reduction every year</p>
+                    </div>
+
+                  </div>
+                  <div class="col-6 col-lg-3 col-xl-3 mb-2">
+                    <div class="statCard">
+                      <h3 class="statValue counter-value" data-count="87000">0</h3>
+                      <p>KG - Plastic Waste recycled every day</p>
+                    </div>
+
+                  </div>
+                  <div class="col-6 col-lg-3 col-xl-3 mb-2">
+                    <div class="statCard">
+                      <h3 class="statValue counter-value" data-count="39000">65,000</h3>
+                      <p>KG - Carbon Foot Print saved</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-img" style="
+                              background-image: url(http://swachhaecosolutions.com/images/gallery/events/swatchevent_2.jpg);
+                            "></div>
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
+                      <h4 class="card-title">Residential Collection</h4>
+                      <p class="card-text oswald">Get responsible waste disposal and removal services, we Swachha offers residential solid waste service offering 
+                        Residential Waste Removal: We offer responsible door to door waste collection services for households in partnership in Urban Local Bodies.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-img" style="
+                              background-image: url(http://swachhaecosolutions.com/images/gallery/events/swatchevent_1.jpg);
+                            "></div>
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
+                      <h4 class="card-title">Transportation of Waste </h4>
+                      <p class="card-text oswald">
+                        Waste transportation services help ensure companies follow government regulations for waste disposal. To stay in compliance and develop a cost-effective waste development solution, many businesses choose to work with Swachha as we have in-house fleet of vehicles.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-img" style="
+                              background-image: url(http://swachhaecosolutions.com/images/gallery/events/swatchevent_7.jpg);
+                            "></div>
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
+                      <h4 class="card-title">Aggregation Facility</h4>
+                      <p class="card-text oswald">
+                        We have Aggregating facilitate infra required for material segregation, storage, size reduction which will help in creating value addition for the waste and achieve maximum recovery of the waste.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-img" style="
+                              background-image: url(http://swachhaecosolutions.com/images/gallery/events/swatchevent_5.jpg);
+                            "></div>
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
+                      <h4 class="card-title">Recycling of Waste</h4>
+                      <p class="card-text oswald">
+                        We have Dry Waste Processing Centre where tertiary segregated waste is transported to our recycling facility for converting waste into useful finished products 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-img" style="background-image: url(assets/images/random_test.jpg)"></div>
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
+                      <h4 class="card-title">Composting</h4>
+                      <p class="card-text oswald">
+                        We have a decentralised wet waste composting facility ,source segregated  organics which are collected from Door-Door /Bulk Generators will transported in a separate vehicles and composted into useful manure
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-img" style="
+                              background-image: url(http://swachhaecosolutions.com/images/gallery/events/swatchevent_13.jpg);
+                            "></div>
+                    <div class="card-img-overlay d-flex flex-column justify-content-between">
+                      <h4 class="card-title">Safe disposal</h4>
+                      <p class="card-text oswald">
+                        The non-recyclable waste such as Resource Derived Fuel (RDF) /Multi-Layer Plastic (MLP)/Low Value Plastic (LVP) is converted into REPOLYMIX – Grades which are used as an alternative fuel to Cement, Steel Industries and also used in Road Construction.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- here there was stats older_version -->
+
+            <section class="newsBox">
+              <div class="container">
+                <div class="row">
+                  <div class="area-heading">
+                    <h3>In The News</h3>
+
+                  </div>
+                </div>
+                <div class="row mb-2" id="media">
+                  <div class="col-lg-6 col-xl-6 mb-2">
+                    <div class="single-blog row no-gutters style-four m_b_30">
+                      <div class="col-12 col-sm-7" style="background: #387a45;">
+                        <div class="short_details left">
+
+                          <a class="d-block" href="single-blog.html">
+                            <h4 class="font-20">Harvest Fest To Go Greener </h4>
+                          </a>
+                          <p>The city endures the burden of around 3,000 tonnes of waste every day. In an addition to
+                            that, festival seasons give it a spike of 35 per cent, according to BBMP. This year, to
+                            manage the festival waste in each ward, the civic authority, along with the residents'
+                            groups, decided to celebrate an eco-friendly Ugadi.</p>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-5">
+                        <div class="thumb">
+                          <img src="assets/images/news1.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-lg-6 col-xl-6 mb-2">
+                    <div class="single-blog row no-gutters style-four m_b_30">
+                      <div class="col-12 col-sm-7" style="background: #387a45;">
+
+                        <div class="short_details left">
+
+                          <a class="d-block" href="single-blog.html">
+                            <h4 class="font-20">Yelahanka gets waste recycling unit </h4>
+                          </a>
+                          <p>A private dry waste recycling unit in collaboration with BBMP was inaugurated in Yelahanka
+                            on Thursday.</p>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-5">
+                        <div class="thumb">
+                          <img class="img-fluid" src="assets/images/news2.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-xl-6 mb-2">
+                    <div class="single-blog row no-gutters style-four m_b_30">
+                      <div class="col-12 col-sm-7" style="background: #387a45;">
+                        <div class="short_details left">
+                          <a class="d-block" href="single-blog.html">
+                            <h4 class="font-20">Swachha’s new dry waste processing centre </h4>
+                          </a>
+                          <p>Yelahanka waited for five years for its dry waste processing centre to resurrect itself
+                            from bureaucratic apathy. Looks like it’s been well worth the wait.</p>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-5">
+                        <div class="thumb">
+                          <img src="http://www.swachhaecosolutions.com/images/media/3.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-lg-6 col-xl-6 mb-2">
+                    <div class="single-blog row no-gutters style-four m_b_30">
+                      <div class="col-12 col-sm-7" style="background: #387a45;">
+                        <div class="short_details left">
+                          <a class="d-block" href="single-blog.html">
+                            <h4 class="font-20">Yelahanka Eco Group does fantastic waste management on Ganesha </h4>
+                          </a>
+                          <p>No grandiose statements or placards. No chest-beating. No gaggle of mediapersons or TV
+                            cameras trying to devour glimpses of roadside spot clean-ups.</p>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-5">
+                        <div class="thumb">
+                          <img src="http://www.swachhaecosolutions.com/images/media/4.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="ourclients pt-3 pb-3">
+              <div class="container">
+                <div class="row">
+                  <div class="area-heading">
+                    <h3>Our Clients</h3>
+
+                  </div>
+                </div>
+                <div class="row no-gutters" id="clients">
+                  <div class="col-6 col-md-4 col-lg-3 col-xl-3 ">
+                    <div class="clientCard">
+                      <img src="/assets/images/swacha.png">
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xl-3 ">
+                    <div class="clientCard">
+                      <img src="/assets/images/swacha.png">
+                    </div>
+
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="clientCard">
+                      <img src="/assets/images/swacha.png">
+                    </div>
+
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="clientCard">
+                      <img src="/assets/images/swacha.png">
+                    </div>
+
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xl-3 ">
+                    <div class="clientCard">
+                      <img src="/assets/images/swacha.png">
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xl-3 ">
+                    <div class="clientCard">
+                      <img src="/assets/images/swacha.png">
+                    </div>
+
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="clientCard">
+                      <img src="/assets/images/swacha.png">
+                    </div>
+
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3 col-xl-3 ">
+                    <div class="clientCard">
+                      <img src="/assets/images/swacha.png">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="testimonials">
+              <div class="container pt-5">
+                <div class="row">
+                  <div class="area-heading">
+                    <h3>What our Clients are saying.</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" id="testimonials">
+                    <div class="testimonials-card">
+                      <div class="testimonials-layer"></div>
+                      <div class="testimonials-content">
+                        <h1 class="quotes-open">&#8220;</h1>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi delectus dolor doloribus
+                          dolorum inventore quia ab dignissimos quidem ut ex reprehenderit omnis modi enim esse,
+                          voluptate obcaecati tempore accusamus illum.
+                        </p>
+                        <h1 class="quotes-close">&#8221;</h1>
+                        <div class="testimonials-img">
+                          <img src="/assets/images/news1.png">
+                        </div>
+                        <div class="testimonials-details">
+                          <h2>Firstname Lastname<br><span>Citizen of so and so</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonials-card">
+                      <div class="testimonials-layer"></div>
+                      <div class="testimonials-content">
+                        <h1 class="quotes-open">&#8220;</h1>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi delectus dolor doloribus
+                          dolorum inventore quia ab dignissimos quidem ut ex reprehenderit omnis modi enim esse,
+                          voluptate obcaecati tempore accusamus illum.
+                        </p>
+                        <h1 class="quotes-close">&#8221;</h1>
+                        <div class="testimonials-img">
+                          <img src="/assets/images/news1.png">
+                        </div>
+                        <div class="testimonials-details">
+                          <h2>Firstname Lastname<br><span>Citizen of so and so</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonials-card">
+                      <div class="testimonials-layer"></div>
+                      <div class="testimonials-content">
+                        <h1 class="quotes-open">&#8220;</h1>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi delectus dolor doloribus
+                          dolorum inventore quia ab dignissimos quidem ut ex reprehenderit omnis modi enim esse,
+                          voluptate obcaecati tempore accusamus illum.
+                        </p>
+                        <h1 class="quotes-close">&#8221;</h1>
+                        <div class="testimonials-img">
+                          <img src="/assets/images/news1.png">
+                        </div>
+                        <div class="testimonials-details">
+                          <h2>Firstname Lastname<br><span>Citizen of so and so</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add Arrows -->
+
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+        </header>
+      </div>
+      
+      <div class="links">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Portofolio</a>
+          </li>
+          <li>
+            <a href="#media">Media</a>
+          </li>
+          <li>
+            <a href="#clients">Clients</a>
+          </li>
+          <li>
+            <a href="#testimonials">Testimonials</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      grabCursor: true,
+      centeredSlides: true,
+      autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+      slidesPerView: 'auto',
+      loop:true,
+      navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+    });
+  </script>
+  <script type="text/javascript">
+
+    function scrollPos() {
+      var a = 0;
+      var oTop = $('#counter').offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > oTop){
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 800,
+          easing: 'linear',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            // alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+    }
+  </script>
+
+  <script>
+    //  SLICK SLIDER
+    //  https://kenwheeler.github.io/slick/
+
+    //  Parent Video Slider
+    $(".video-container").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: false,
+      asNavFor: ".video-thumbnails"
+    });
+
+    //  Child Thumbnail Slider
+    $(".video-thumbnails").slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: ".video-container",
+      dots: false,
+      arrows: false,
+      centerMode: true,
+      focusOnSelect: true
+    });
+
+    //  Video Poster Setup
+    //  FORKED FROM CRAIG MONEY 
+    //  https://codepen.io/pixelthing/details/zGZKaQ
+
+    $(document).on("click", ".js-videoPoster", function (ev) {
+      "use strict";
+      ev.preventDefault();
+      videoStop();
+      var $poster = $(this);
+      var $wrapper = $poster.closest(".js-videoWrapper");
+      videoPlay($wrapper);
+    });
+
+    // play the targeted video (and hide the poster frame)
+    function videoPlay($wrapper) {
+      "use strict";
+      var $iframe = $wrapper.find(".js-videoIframe");
+      var src = $iframe.data("src");
+      // hide poster
+      $wrapper.addClass("videoWrapperActive");
+      // add iframe src in, starting the video
+      $iframe.attr("src", src);
+    }
+
+    // stop the targeted/all videos (and re-instate the poster frames)
+    function videoStop($wrapper) {
+      "use strict";
+      // if we're stopping all videos on page
+      if (!$wrapper) {
+        var $wrapper = $(".js-videoWrapper");
+        var $iframe = $(".js-videoIframe");
+        // if we're stopping a particular video
+      } else {
+        var $iframe = $wrapper.find(".js-videoIframe");
+      }
+      // reveal poster
+      $wrapper.removeClass("videoWrapperActive");
+      // remove youtube link, stopping the video from playing in the background
+      $iframe.attr("src", "");
+    }
+
+    // On before slide change
+    $(".video-container").on("beforeChange", function (
+      event,
+      slick,
+      currentSlide,
+      nextSlide
+    ) {
+      videoStop();
+    });
+
+    $(function () {
+      $('.no-fouc').removeClass('no-fouc');
+      console.log("ready!");
+    });
+  </script>
+  <script>
+    const hamburgermenu = document.querySelector('.fa-align-justify');
+    const container = document.querySelector('.pageContainer');
+
+
+    hamburgermenu.addEventListener('click', () => {
+      container.classList.toggle('active')
+    }
+    )
+
+    $(".fa-align-justify").click(function () {
+      $(this).toggleClass(".fas fa-times");
+    });
+  </script>
+</body>
+
+</html>
